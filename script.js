@@ -57,56 +57,6 @@ function resetForm() {
   disableStatusOptions();
 }
 
-function editTask(id) {
-  const task = tasks.find((task) => task.id === id);
-  if (task) {
-    document.getElementById("title").value = task.title;
-    document.getElementById("desc").value = task.desc;
-    document.getElementById("status").value = task.status;
-    document.getElementById("taskId").value = task.id;
-    document.querySelector("button").innerText = "Update Task";
-    document.querySelector("h5").innerText = "Edit Task";
-
-    enableStatusOptions();
-  }
-}
-
-function resetForm() {
-  document.getElementById("title").value = "";
-  document.getElementById("desc").value = "";
-  document.getElementById("status").value = "todo";
-  document.getElementById("taskId").value = "";
-  document.querySelector("button").innerText = "Add Task";
-  document.querySelector("h5").innerText = "Add Task";
-
-  disableStatusOptions();
-}
-
-function editTask(id) {
-  const task = tasks.find((task) => task.id === id);
-  if (task) {
-    document.getElementById("title").value = task.title;
-    document.getElementById("desc").value = task.desc;
-    document.getElementById("status").value = task.status;
-    document.getElementById("taskId").value = task.id;
-    document.querySelector("button").innerText = "Update Task";
-    document.querySelector("h5").innerText = "Edit Title";
-
-    enableStatusOptions();
-  }
-}
-
-function resetForm() {
-  document.getElementById("title").value = "";
-  document.getElementById("desc").value = "";
-  document.getElementById("status").value = "todo";
-  document.getElementById("taskId").value = "";
-  document.querySelector("button").innerText = "Add Task";
-  document.querySelector("h5").innerText = "Add Task";
-
-  disableStatusOptions();
-}
-
 function disableStatusOptions() {
   document
     .getElementById("status")
