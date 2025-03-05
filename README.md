@@ -1,6 +1,6 @@
 Task Management Application
 
-A simple Task Management application built with HTML, CSS, and JavaScript, allowing users to add, update, delete, and filter tasks. Tasks are stored locally using localStorage for persistence.
+Task Management application built with HTML, CSS, and JavaScript, allowing users to add, update, delete, and filter tasks. Tasks are stored locally using localStorage for persistence.
 Features
 
     Add Task: Add a new task with a title, description, and status (To Do, In Progress, Done).
@@ -16,3 +16,5 @@ Technologies Used
     CSS: Styling using Bootstrap 5 for responsive design.
     JavaScript: Logic for adding, updating, deleting, and filtering tasks. Uses localStorage for task persistence.
     UUID: The crypto.randomUUID() function generates unique IDs for tasks.
+
+    live Site: https://neon-twilight-e23b3b.netlify.app/
